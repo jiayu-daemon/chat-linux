@@ -1,0 +1,87 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CHAT_ALL	include.h	36;"	d
+CHAT_PRI	include.h	35;"	d
+DOWNLOAD	include.h	37;"	d
+ERROR	include.h	41;"	d
+FILE_ERROR	include.h	43;"	d
+FILE_NAME	include.h	42;"	d
+GROUP_IP	include.h	30;"	d
+GROUP_PORT	include.h	31;"	d
+H	server_udp.c	/^static struct servmsg *H;    \/\/服务器主线程，将接收的每个消息，建立成链表,H为链表头$/;"	v	typeref:struct:servmsg	file:
+LOG_IN	include.h	33;"	d
+LOG_IN_FAILED	client_udp.h	/^    LOG_IN_FAILED,$/;"	e	enum:user_current_status
+LOG_IN_SUCCESS	client_udp.h	/^    LOG_IN_SUCCESS,$/;"	e	enum:user_current_status
+MAXSIZE	include.h	27;"	d
+OFFLINE	include.h	39;"	d
+OVER	include.h	40;"	d
+REFRESH	include.h	34;"	d
+REGISTER	include.h	32;"	d
+REGISTER_FAILED	client_udp.h	/^    REGISTER_FAILED,$/;"	e	enum:user_current_status
+REGISTER_SUCESS	client_udp.h	/^    REGISTER_SUCESS = 1,$/;"	e	enum:user_current_status
+SERVER_PORT	include.h	29;"	d
+SERV_USER_ETC	client_udp.c	5;"	d	file:
+SEVER_IP	include.h	28;"	d
+UPLOAD	include.h	38;"	d
+_ADMIN_H	admin.h	2;"	d
+__CLIENT_H	client_udp.h	2;"	d
+__SERVER_H	server_udp.h	2;"	d
+add_user	server_udp.c	/^void add_user(struct user_info *head,struct servmsg *user)$/;"	f
+addr	include.h	/^       struct sockaddr_in addr;$/;"	m	struct:servmsg	typeref:struct:servmsg::sockaddr_in
+chat_private	client_udp.c	/^void *chat_private(void* arg)$/;"	f
+chat_private	server_udp.c	/^void chat_private(void)$/;"	f
+chat_toall	client_udp.c	/^void chat_toall(void)$/;"	f
+chat_toall	server_udp.c	/^void chat_toall( )$/;"	f
+chat_toall_recv	client_udp.c	/^void *chat_toall_recv(void* arg)$/;"	f
+check_user	server_udp.c	/^void check_user()$/;"	f
+cli_addr	include.h	/^       struct sockaddr_in cli_addr;$/;"	m	struct:user_info	typeref:struct:user_info::sockaddr_in
+cli_addr	server_udp.c	/^static struct sockaddr_in cli_addr; \/\/客户端地址$/;"	v	typeref:struct:sockaddr_in	file:
+cli_fd	client_udp.c	/^static int cli_fd = -1; \/\/主要套接字，用于接受服务器各种消息$/;"	v	file:
+cli_msgbuf	server_udp.c	/^static struct msg cli_msgbuf;       \/\/用于存发来消息的结构体$/;"	v	typeref:struct:msg	file:
+data	include.h	/^       char data[MAXSIZE];$/;"	m	struct:msg
+delete_user	server_udp.c	/^void  delete_user(char name[])$/;"	f
+dst_name	include.h	/^       char dst_name[20];$/;"	m	struct:msg
+find	server_udp.c	/^static int find = 0;\/\/标记用户是否成功登录，登录成功设置为1，失败设置为0 $/;"	v	file:
+head_user	server_udp.c	/^static struct user_info *head_user;  \/\/处理线程建立的用户链表头$/;"	v	typeref:struct:user_info	file:
+i	server_udp.c	/^static int i=100; \/\/用户id,从100开始（本程序里未使用）$/;"	v	file:
+id	include.h	/^       int  id;$/;"	m	struct:user_info
+insert	server_udp.c	/^void insert(struct servmsg **last,struct msg buf,struct sockaddr_in cli_addr)$/;"	f
+locat_des	server_udp.c	/^struct user_info *locat_des(char *name)$/;"	f
+log_menuconfig	client_udp.c	/^void log_menuconfig(void)$/;"	f
+main	client_udp.c	/^int main(void)$/;"	f
+main	server_udp.c	/^int main(void)$/;"	f
+msg	include.h	/^struct msg {$/;"	s
+my_strcut	client_udp.c	/^char* my_strcut (char * dst, const char *src)$/;"	f
+myhandle	client_udp.c	/^void myhandle(int signum)$/;"	f
+myhandle	server_udp.c	/^void myhandle(int signum)$/;"	f
+myname	client_udp.c	/^static char myname[20]; \/\/用于存储用户名$/;"	v	file:
+next	include.h	/^       struct servmsg *next;$/;"	m	struct:servmsg	typeref:struct:servmsg::servmsg
+next	include.h	/^       struct user_info *next;$/;"	m	struct:user_info	typeref:struct:user_info::user_info
+pthread_func	server_udp.c	/^void *pthread_func()$/;"	f
+recv_chat_func	client_udp.c	/^void *recv_chat_func(void *arg)$/;"	f
+recvmsg	include.h	/^       struct msg recvmsg;$/;"	m	struct:servmsg	typeref:struct:servmsg::msg
+register_user	server_udp.c	/^void register_user()$/;"	f
+self_addr	server_udp.c	/^static struct sockaddr_in self_addr; \/\/服务器自己的地址$/;"	v	typeref:struct:sockaddr_in	file:
+self_name	include.h	/^       char self_name[20];$/;"	m	struct:msg
+send_all_online	server_udp.c	/^void *send_all_online(struct sockaddr_in addr)$/;"	f
+send_log_info	server_udp.c	/^void *send_log_info(struct sockaddr_in addr,const char *src_data)$/;"	f
+send_register_info	server_udp.c	/^void *send_register_info(struct sockaddr_in addr,const char *src_data)$/;"	f
+send_sig	client_udp.c	/^void send_sig(char myname[],char desname[],char data[],struct sockaddr_in serv_addr,char ch)$/;"	f
+sendmsg_to_cli	server_udp.c	/^void sendmsg_to_cli(struct user_info *locat_tmp)$/;"	f
+serv_addr	client_udp.c	/^static struct sockaddr_in serv_addr; \/\/用于存储服务器IP和端口$/;"	v	typeref:struct:sockaddr_in	file:
+serv_fd	server_udp.c	/^static int serv_fd;\/\/主要套接字,用来接收客户端发来的各种消息$/;"	v	file:
+servmsg	include.h	/^struct servmsg$/;"	s
+show_opt	client_udp.c	/^void show_opt(void)$/;"	f
+sock_fd	client_udp.c	/^static int sock_fd = -1; \/\/组播套接字，用于群聊$/;"	v	file:
+type	include.h	/^       char type;$/;"	m	struct:msg
+udp_link	client_udp.c	/^int udp_link(void)$/;"	f
+udp_link	server_udp.c	/^int udp_link(void)$/;"	f
+user_current_status	client_udp.h	/^enum user_current_status$/;"	g
+user_info	include.h	/^struct user_info{$/;"	s
+user_log_status	client_udp.c	/^enum user_current_status user_log_status,user_resgis_status;$/;"	v	typeref:enum:user_current_status
+user_name	include.h	/^       char user_name[20];$/;"	m	struct:user_info
+user_resgis_status	client_udp.c	/^enum user_current_status user_log_status,user_resgis_status;$/;"	v	typeref:enum:
